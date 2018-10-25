@@ -1,0 +1,4 @@
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService.Tests\obj\Debug\netcoreapp2.1\JobService.Tests.csprojAssemblyReference.cache
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService.Tests\obj\Debug\netcoreapp2.1\JobService.Tests.csproj.CoreCompileInputs.cache
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService.Tests\obj\Debug\netcoreapp2.1\JobService.Tests.AssemblyInfoInputs.cache
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService.Tests\obj\Debug\netcoreapp2.1\JobService.Tests.AssemblyInfo.cs

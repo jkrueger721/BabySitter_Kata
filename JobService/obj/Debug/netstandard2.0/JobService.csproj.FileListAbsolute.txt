@@ -1,0 +1,9 @@
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService\bin\Debug\netstandard2.0\JobService.deps.json
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService\bin\Debug\netstandard2.0\JobService.dll
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService\bin\Debug\netstandard2.0\JobService.pdb
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService\obj\Debug\netstandard2.0\JobService.csprojAssemblyReference.cache
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService\obj\Debug\netstandard2.0\JobService.csproj.CoreCompileInputs.cache
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService\obj\Debug\netstandard2.0\JobService.AssemblyInfoInputs.cache
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService\obj\Debug\netstandard2.0\JobService.AssemblyInfo.cs
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService\obj\Debug\netstandard2.0\JobService.dll
+C:\Users\John\Desktop\Pillar\Kata_Babysitter\JobService\obj\Debug\netstandard2.0\JobService.pdb
