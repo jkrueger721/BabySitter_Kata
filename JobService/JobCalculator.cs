@@ -1,12 +1,28 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 
 namespace JobService
 {
     public class JobCalculator
     {
-        public bool JobStartTime(int time){
+         DateTime startRange = new DateTime(5, 0 , 0);
+       
+            
 
-            throw new NotImplementedException("Please Create test first");
+        public bool IsShiftStartAfter5pm(DateTime shiftStart ) {
+
+           
+            
+                if (shiftStart <= startRange)
+                {
+                    return false;
+                } else {
+                    return true;
+                }
+            
+            return false;
+            
         }
 
     }
