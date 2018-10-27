@@ -1681,6 +1681,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "JobService/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/JobService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JobService.dll": {}
+        }
       }
     }
   },
@@ -5740,10 +5750,16 @@
         "xunit.runner.visualstudio.2.3.1.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "JobService/1.0.0": {
+      "type": "project",
+      "path": "../JobService/JobService.csproj",
+      "msbuildProject": "../JobService/JobService.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "JobService >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.8.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "xunit >= 2.3.1",
@@ -5779,7 +5795,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\John\\Desktop\\Pillar\\Kata_Babysitter\\JobService\\JobService.csproj": {
+              "projectPath": "C:\\Users\\John\\Desktop\\Pillar\\Kata_Babysitter\\JobService\\JobService.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
