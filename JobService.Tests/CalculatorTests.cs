@@ -15,11 +15,11 @@ namespace JobService.Tests
 
 
         [Fact]
-        public void ReturnFalseEarlierThan5PM()
+        public void ReturnTrueIfInTimeRange()
         {
-            var result = _jobService.JobStartTime();
+            var result = _jobService.IsShiftStartAfter5pm();
 
-            Assert.False(result, "should not be earlier than 5pm");
+            Assert.False(result, "should show not before 5pm");
         }
     }
 }
