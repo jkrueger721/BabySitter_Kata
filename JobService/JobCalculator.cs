@@ -6,23 +6,26 @@ namespace JobService
 {
     public class JobCalculator
     {
-         DateTime startRange = new DateTime(5, 0 , 0);
+        //  DateTime startRange = new DateTime.Parse("17:00");
        
             
 
-        public bool IsShiftStartAfter5pm(DateTime shiftStart ) {
+        // public bool IsShiftStartAfter5pm(string shiftStart ) {
 
-           
+        //    var s = DateTime.Parse(shiftStart);
             
-                if (shiftStart <= startRange)
-                {
-                    return false;
-                } else {
-                    return true;
-                }
+        //         if (s <= startRange)
+        //         {
+        //             return false;
+        //         } else {
+        //             return true;
+        //         }
             
-            return false;
+        //     return false;
             
+        // }
+        public double FullHour(double hours){
+                return Math.Ceiling(hours);
         }
 
     }

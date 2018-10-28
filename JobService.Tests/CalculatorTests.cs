@@ -12,14 +12,22 @@ namespace JobService.Tests
         {
             _jobService = new JobCalculator();
         }
-
-
         [Fact]
-        public void ReturnTrueIfInTimeRange()
+        public void ShouldRoundUpWholeNumber()
         {
-            var result = _jobService.IsShiftStartAfter5pm();
-
-            Assert.False(result, "should show not before 5pm");
+        //Given
+        var result = _jobService.FullHour(4.5);
+        //When
+        Assert.Equal(5, result);
+        //Then
         }
+
+    //     [Fact]
+    //     public void ReturnTrueIfInTimeRange()
+    //     {
+    //         var result = _jobService.IsShiftStartAfter5pm("17:57");
+
+    //         Assert.False(result, "should show not before 5pm");
+    //     }
     }
 }
