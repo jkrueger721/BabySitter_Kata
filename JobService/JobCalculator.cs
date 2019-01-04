@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using System.Threading;
-
+using Family;
 namespace JobService
 {
     public class JobCalculator
@@ -36,6 +36,13 @@ namespace JobService
             return true;
                        
         }
+
+        List<Family> families = new List<Family>()
+        {
+            new Family  {Name = "A", Rate = 15},
+            new Family  {Name = "B", Rate = 12}, 
+            new Family  {Name = "C", Rate = 21}
+        };
         public int FamilyCalculator(string shiftStart){
             var s = TimeSpan.Parse(shiftStart);
             
