@@ -2,10 +2,10 @@
 
 ## TDD coding exercise using C#/ .net CORE and xUnit
 
+cd BabySitter_Kata/JobService
+dotnet run -- runs program
 
-dotnet run // runs program
-
-
-dotnet test // runs tests
+cd BabySitter_Kata/JobService.Tests
+dotnet test -- runs tests
 
 
