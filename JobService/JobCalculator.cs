@@ -48,6 +48,17 @@ namespace JobService
             }
             return 0;
         }
+        public int FamilyBCalculator(string shiftStart)
+        {
+            var s = TimeSpan.Parse(shiftStart);
+
+            if(s < TimeSpan.Parse("22:00:00")){
+                return 12;
+            } else {
+                return 16;
+            }
+            return 0;
+        }
 
     }
 }

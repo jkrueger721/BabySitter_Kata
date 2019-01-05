@@ -47,5 +47,14 @@ namespace JobService.Tests
 
             Assert.Equal(20, result);
         }
+        [Fact]
+        public void FamilyBShouldPay12Before10()
+        {
+        //Given
+        var result = _jobService.FamilyBCalculator("21:40:00");
+        //When
+        Assert.Equal(12, result);
+        //Then
+        }
     }
 }
