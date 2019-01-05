@@ -63,6 +63,8 @@ namespace JobService
             var s = TimeSpan.Parse(shiftStart);
             if(s < TimeSpan.Parse("21:00:00")){
                 return 21;
+            } else{
+                return 15;
             }
             return 0;
         }
