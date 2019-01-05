@@ -18,27 +18,32 @@ namespace JobService
 
         public bool IfInTimeRange(string shiftStart)
         {
-
+            bool condition = true;
             var s = TimeSpan.Parse(shiftStart);
-
-            if( s <= endTime){
-
-               if(s >= startTime && s <= endTime){
-                   return true;
-               }
             
-            }else {
-                if(s >= startTime || s <= endTime){
-                    return true;
-                }
-
+            if( s <= endTime)
+            {
+               if(s >= startTime && s <= endTime)
+               {
+                  condition = true;
+               }
             }
-            return true;
-                       
+            else if(s >= startTime || s <= endTime)
+            {
+                condition = true;
+            } 
+            else 
+            {
+               condition = false;
+            }
+            
+            return condition;
+        
         }
 
        
-        public int FamilyACalculator(string shiftStart){
+        public int FamilyACalculator(string shiftStart)
+        {
             var s = TimeSpan.Parse(shiftStart);
             
             if(s < TimeSpan.Parse("23:00:00")){

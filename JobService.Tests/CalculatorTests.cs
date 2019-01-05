@@ -24,21 +24,25 @@ namespace JobService.Tests
         }
         
 
-        [Fact]
-        public void ReturnTrueIfInTimeRange()
+        [Theory]
+        [InlineData("23:59:00")]
+        [InlineData("04:00:00")]
+        
+        public void ReturnTrueIfInTimeRange(string value )
         {
-            var result = _jobService.IfInTimeRange("23:59");
+            // var result = _jobService.IfInTimeRange("23:59");
+            var result = _jobService.IfInTimeRange(value);
 
             Assert.True(result, "shift start should at or after 5pm shift end before or on 4am");
         }
-        static int resultA = _jobService.FamilyACalculator();
+        
         [Fact]
         public void FamilyAShouldPay15Before11PM()
         {
         //Given
-        // var result = _jobService.FamilyACalculator("22:00:00");
+        var result = _jobService.FamilyACalculator("22:00:00");
         //When
-        Assert.Equal(15, resultA);
+        Assert.Equal(15, result);
         //Then
         }
         [Fact]
