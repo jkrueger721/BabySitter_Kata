@@ -65,6 +65,14 @@ namespace JobService.Tests
        Assert.Equal(16, result);
        //Then
        }
-
+        [Fact]
+        public void FamilyCShouldPay21Before9()
+        {
+        //Given
+        var result = _jobService.FamilyCCalculator("08:59:00");
+        //When
+        Assert.Equal(21, result);
+        //Then
+        }
     }
 }
