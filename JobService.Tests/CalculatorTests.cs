@@ -35,10 +35,17 @@ namespace JobService.Tests
         public void FamilyAShouldPay15Before11PM()
         {
         //Given
-        var result = _jobService.FamilyCalculator("22:00:00");
+        var result = _jobService.FamilyACalculator("22:00:00");
         //When
         Assert.Equal(15, result);
         //Then
+        }
+        [Fact]
+        public void FamilyAShouldPay20After11PM()
+        {
+            var result = _jobService.FamilyACalculator("23:01:00");
+
+            Assert.Equal(20, result);
         }
     }
 }
