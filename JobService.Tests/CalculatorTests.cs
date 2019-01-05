@@ -31,13 +31,14 @@ namespace JobService.Tests
 
             Assert.True(result, "shift start should at or after 5pm shift end before or on 4am");
         }
+        static int resultA = _jobService.FamilyACalculator();
         [Fact]
         public void FamilyAShouldPay15Before11PM()
         {
         //Given
-        var result = _jobService.FamilyACalculator("22:00:00");
+        // var result = _jobService.FamilyACalculator("22:00:00");
         //When
-        Assert.Equal(15, result);
+        Assert.Equal(15, resultA);
         //Then
         }
         [Fact]
@@ -65,6 +66,7 @@ namespace JobService.Tests
        Assert.Equal(16, result);
        //Then
        }
+       
         [Fact]
         public void FamilyCShouldPay21Before9()
         {
