@@ -16,10 +16,10 @@ namespace JobService
                 return Math.Ceiling(hours) ;
         }
 
-        public bool IfInTimeRange(string shiftStart)
+        public bool IfInTimeRange(string shiftTime)
         {
             bool condition = true;
-            var s = TimeSpan.Parse(shiftStart);
+            var s = TimeSpan.Parse(shiftTime);
             
             if( s <= endTime)
             {
@@ -42,7 +42,7 @@ namespace JobService
         }
 
        
-        public int FamilyACalculator(string shiftStart)
+        public int FamilyARate(string shiftStart)
         {
             var s = TimeSpan.Parse(shiftStart);
             
@@ -53,7 +53,7 @@ namespace JobService
             }
             return 0;
         }
-        public int FamilyBCalculator(string shiftStart)
+        public int FamilyBRate(string shiftStart)
         {
             var s = TimeSpan.Parse(shiftStart);
 
@@ -64,7 +64,7 @@ namespace JobService
             }
             return 0;
         }
-        public int FamilyCCalculator(string shiftStart){
+        public int FamilyCRate(string shiftStart){
             var s = TimeSpan.Parse(shiftStart);
             if(s < TimeSpan.Parse("21:00:00")){
                 return 21;

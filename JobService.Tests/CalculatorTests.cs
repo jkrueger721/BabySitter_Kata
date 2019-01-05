@@ -40,7 +40,7 @@ namespace JobService.Tests
         public void FamilyAShouldPay15Before11PM()
         {
         //Given
-        var result = _jobService.FamilyACalculator("22:00:00");
+        var result = _jobService.FamilyARate("22:00:00");
         //When
         Assert.Equal(15, result);
         //Then
@@ -48,7 +48,7 @@ namespace JobService.Tests
         [Fact]
         public void FamilyAShouldPay20After11PM()
         {
-            var result = _jobService.FamilyACalculator("23:01:00");
+            var result = _jobService.FamilyARate("23:01:00");
 
             Assert.Equal(20, result);
         }
@@ -56,7 +56,7 @@ namespace JobService.Tests
         public void FamilyBShouldPay12Before10()
         {
         //Given
-        var result = _jobService.FamilyBCalculator("21:40:00");
+        var result = _jobService.FamilyBRate("21:40:00");
         //When
         Assert.Equal(12, result);
         //Then
@@ -65,7 +65,7 @@ namespace JobService.Tests
        public void FamilyBShouldPAy16After10()
        {
        //Given
-       var result = _jobService.FamilyBCalculator("22:01:00");
+       var result = _jobService.FamilyBRate("22:01:00");
        //When
        Assert.Equal(16, result);
        //Then
@@ -75,7 +75,7 @@ namespace JobService.Tests
         public void FamilyCShouldPay21Before9()
         {
         //Given
-        var result = _jobService.FamilyCCalculator("08:59:00");
+        var result = _jobService.FamilyCRate("08:59:00");
         //When
         Assert.Equal(21, result);
         //Then
@@ -84,7 +84,7 @@ namespace JobService.Tests
         public void FamilyCShouldPay15After9()
         {
         //Given
-        var result = _jobService.FamilyCCalculator("21:00:00");
+        var result = _jobService.FamilyCR("21:00:00");
         //When
         Assert.Equal(15, result);
         //Then
