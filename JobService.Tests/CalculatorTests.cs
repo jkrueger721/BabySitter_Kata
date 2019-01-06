@@ -61,11 +61,20 @@ namespace JobService.Tests
         Assert.Equal(12, result);
         //Then
         }
+        [Fact]
+        public void FamilyBShouldPay8Between10and12()
+        {
+        //Given
+        var result = _jobService.FamilyBRate("22:01:00");
+        //When
+        Assert.Equal(8, result);
+        //Then
+        }
        [Fact]
-       public void FamilyBShouldPAy16After10()
+       public void FamilyBShouldPAy16After12()
        {
        //Given
-       var result = _jobService.FamilyBRate("22:01:00");
+       var result = _jobService.FamilyBRate("01:02:00");
        //When
        Assert.Equal(16, result);
        //Then
@@ -84,7 +93,7 @@ namespace JobService.Tests
         public void FamilyCShouldPay15After9()
         {
         //Given
-        var result = _jobService.FamilyCR("21:00:00");
+        var result = _jobService.FamilyCRate("21:00:00");
         //When
         Assert.Equal(15, result);
         //Then
