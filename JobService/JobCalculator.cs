@@ -8,13 +8,7 @@ namespace JobService
     {
      TimeSpan startTime = TimeSpan.Parse("17:00:00");
      TimeSpan endTime = TimeSpan.Parse("04:00:00");
-    // Family families = new List<Family>{
-    //     new Family(){ Name = "A", Rate = 15, BedTime = "23:00:00", BedTimeRate = 20 },
-    //     new Family(){ Name = "B", Rate = 12, BedTime = "23:00:00", BedTimeRate = 20 },
-    //     new Family(){ Name = "A", Rate = 15, BedTime = "23:00:00", BedTimeRate = 20 },
-        
-    // };
-       
+   
         public double FullHour(double hours)
         {
             
